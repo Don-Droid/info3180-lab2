@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="top">
+  <div class="image"> <!--image section of the side bar-->
+    <img class = "img-me" src="{{url_for('static', filename='images/ME.jpeg')}}" alt="a photo of the me">
+    <h1>Raldon Baxter</h1>
+    <h6>@koolKat</h6>
+    <h6>Montego Bay, Jamaica</h6>
+    <h6>Joined {{ ndate }}</h6>
+  </div>
+</div>
+<div>
+  <br>
+<p>I am a student at the University of the West Indies (Western Jamaica Campus), where I am pursueing a Bachelor of Science degree in Information Technology in the faculty of Science and Technology. I love Information Technology and Web development is my favourite course. I am smart and my ambition is to become a professional web developer upon graduating from the University of the West Indies.</p>
+  <br>
+    <section class=follower>
+      <div class="Posts">
+        <h3>  7  </h3>
+        <p>Posts</p>
+      </div>
+      <div class="Following">
+        <h3>  100  </h3>
+        <p>Following</p>
+      </div>
+      <div class="Followers">
+        <h3>250</h3>  
+        <p>Followers</p>
+      </div>
+    </section>
+    <br>
+    <button class="follow">Follow</button>
+</div>
+{% endblock %}
+           
